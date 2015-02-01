@@ -9,6 +9,13 @@ require('angular-aria/angular-aria') && deps.push('ngAria');
 require('angular-messages/angular-messages') && deps.push('ngMessages');
 require('angular-sanitize/angular-sanitize') && deps.push('ngSanitize');
 
+// angular-material stuff
+window.Hammer = require('hammerjs');
+require('material-design');
+require('material-design/angular-material.css');
+deps.push('ngMaterial');
+
+
 require('angular-bootstrap') && deps.push('ui.bootstrap');
 
 // require all the things that do export the name (yay!)
@@ -23,6 +30,7 @@ module.exports.name = ngModule.name;
 
 
 // all peeps who register under this thing!
+require('./constants')(ngModule);
+require('./config')(ngModule);
 require('./services')(ngModule);
 require('./directives')(ngModule);
-require('./constants')(ngModule);

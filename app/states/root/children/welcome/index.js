@@ -1,5 +1,5 @@
 let {state, ngModule} = require('registerState')(__filename, require('ngCommon'), {
-  url: null,
+  url: 'welcome',
   abstract: true,
   template: require('./index.html'),
   controller: require('./controller'),

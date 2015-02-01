@@ -1,3 +1,4 @@
+#!/bin/bash
 rm -rf dist
 
 node node_modules/webpack/bin/webpack --config webpack.config.prod.js
@@ -5,11 +6,5 @@ node node_modules/webpack/bin/webpack --config webpack.config.prod.js
 cp app/index.html dist/index.html
 
 # TODO figure out the right way to do this when you have internet...
-mkdir dist/states
-mkdir dist/states/root
-mkdir dist/states/root/children
-mkdir dist/states/root/children/welcome
-mkdir dist/states/root/children/welcome/components
-mkdir dist/states/root/children/welcome/components/assets
-mkdir dist/states/root/children/welcome/components/assets/rbb_backgrounds
+mkdir -p dist/states/root/children/welcome/components/assets/rbb_backgrounds/
 cp -r app/states/root/children/welcome/components/assets/rbb_backgrounds/ dist/states/root/children/welcome/components/assets/rbb_backgrounds/

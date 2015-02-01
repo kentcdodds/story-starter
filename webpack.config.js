@@ -77,7 +77,8 @@ function getConfig(context) {
       alias: {
         ssCommonModule: here('app/components/shared/ngCommon'),
         stateUtils: here('app/shared/ngCommon/services/stateUtils'),
-        utils: here('app/shared/ngCommon/services/utils')
+        utils: here('app/shared/ngCommon/services/utils'),
+        rbbBackgrounds: here('app/shared')
       },
       root: here('app')
     },

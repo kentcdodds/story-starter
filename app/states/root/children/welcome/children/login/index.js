@@ -3,6 +3,6 @@ module.exports = require('registerState')(__filename, require('ngCommon'), {
   controller: require('./controller'),
   data: {
     displayName: 'Login',
-    activationEvents: ['login']
+    activationEvents: ['login', 'unauthenticated']
   }
 }).state;

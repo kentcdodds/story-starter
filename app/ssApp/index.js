@@ -31,5 +31,7 @@ function config($urlRouterProvider, $httpProvider, $compileProvider, $stateProvi
 
   $compileProvider.debugInfoEnabled(onDev);
 
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise(function() {
+    stateUtils.eventNavigate('noRouteMatch');
+  });
 }
