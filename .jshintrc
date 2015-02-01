@@ -3,6 +3,7 @@
   "eqeqeq": true,
   "bitwise": true,
   "camelcase": true,
+  "esnext": true,
   "expr": true,
   "forin": true,
   "freeze": true,
@@ -16,8 +17,6 @@
   "quotmark": "single",
   "undef": true,
   "unused": "vars",
-  "globalstrict": true,
-  "strict": true,
   "trailing": true,
   "maxdepth": 4,
   "maxstatements": 30,
@@ -26,5 +25,19 @@
   "browser": true,
   "node": true,
   "globals": {
+    "angular": true,
+
+    "describe": true,
+    "before": true,
+    "after": true,
+    "beforeEach": true,
+    "afterEach": true,
+    "it": true,
+    "expect": true,
+    "inject": true,
+
+    "ON_DEV": true,
+    "ON_TEST": true,
+    "ON_PROD": true
   }
 }

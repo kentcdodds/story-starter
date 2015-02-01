@@ -1,8 +1,4 @@
-'use strict';
-
-var angular = require('angular');
-
-var ssApp = require('./ssApp.module');
+var ssApp = require('./ssApp');
 
 angular.element(document).ready(function() {
   angular.bootstrap(document, [ssApp.name]);
