@@ -1,0 +1,1 @@
+./scripts/cloc --exclude-dir=node_modules --exclude-list-file=./scripts/count-exclude --force-lang=CSS,styl ./app/
