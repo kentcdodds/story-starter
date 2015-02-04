@@ -1,6 +1,8 @@
 var webpack = require('webpack');
 var _ = require('lodash');
 var path = require('path');
+var fs = require('fs');
+var jshint = JSON.parse(fs.readFileSync('./.jshintrc', 'utf-8'));
 
 var exclude = /node_modules/;
 
@@ -103,7 +105,8 @@ function getConfig(context) {
           loader: 'file-loader?name=/res/[name].[ext]?[hash]'
         }
       ]
-    }
+    },
+    jshint: jshint
   };
 
   console.log('Webpack config is in ' + context + ' mode');

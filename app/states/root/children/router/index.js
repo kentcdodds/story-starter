@@ -9,7 +9,7 @@ module.exports = require('registerState')(__filename, require('ngCommon'), {
       if (!authenticationToken) {
         stateUtils.eventNavigate('unauthenticated', $stateParams);
       } else {
-        throw new Error('This is not yet supported!');
+        stateUtils.eventNavigate('goHome', $stateParams);
       }
     }
   },

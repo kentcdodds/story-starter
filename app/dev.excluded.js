@@ -350,7 +350,8 @@ var intervalId = setInterval(function() {
   var injectables = [
     '$rootScope', '$http', '$q', '$state', '$stateParams',
     '$location', '$log', '$timeout', 'formlyConfig', '$parse',
-    '$templateCache', 'utils', 'stateUtils', '$filter', '$compile'
+    '$templateCache', 'utils', 'stateUtils', '$filter', '$compile',
+    'AuthToken'
   ];
   injectables.forEach(function(injectable) {
     window[injectable] = $injector.get(injectable);

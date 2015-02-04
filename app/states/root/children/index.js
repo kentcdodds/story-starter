@@ -1,4 +1,5 @@
 module.exports = [
   require('./router'),
-  require('./welcome')
+  require('./welcome'),
+  require('./home')
 ];

@@ -1,6 +1,8 @@
-<form>
-  <formly-form model="vm.loginModel" fields="vm.loginFields" ng-submit="vm.login(vm.loginModel)">
-    <md-button type="submit" class="md-raised md-primary">Login</md-button>
+<div class="Login">
+  <formly-form model="vm.loginModel" fields="vm.loginFields" form="vm.loginForm" ng-submit="vm.login(vm.loginModel)">
+    <div class="+text-align-center">
+      <md-button type="submit" class="md-raised md-primary" ng-disabled="vm.loginForm.$invalid">Login</md-button>
+    </div>
   </formly-form>
   <a ss-event-navigate="signup">Login</a>
-</form>
+</div>

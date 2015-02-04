@@ -1,0 +1,13 @@
+<md-radio-group ng-model="selected"
+                formly-custom-validation="options.validators"
+                formly-focus="{{options.templateOptions.focus}}"
+                name="{{::id}}">
+  <md-radio-button ng-repeat="option in options.templateOptions.options"
+                   id="{{::id + '_'+ $index}}"
+                   aria-describedby="{{::id}}_description"
+                   ng-value="option.value"
+                   ng-required="options.templateOptions.required">
+    {{option.name}}
+  </md-radio-button>
+  <div ss-messages="options.formControl" options="options"></div>
+</md-radio-group>

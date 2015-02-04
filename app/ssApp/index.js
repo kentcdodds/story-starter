@@ -1,3 +1,4 @@
+require('./index.styl');
 let _ = require('lodash');
 let stateUtils = require('stateUtils');
 let utils = require('utils');
@@ -23,7 +24,7 @@ module.exports.name = ngModule.name;
 
 ngModule.config(config);
 
-function config($urlRouterProvider, $httpProvider, $compileProvider, $stateProvider, onDev) {
+function config($urlRouterProvider, $httpProvider, $compileProvider, onDev) {
   $httpProvider.defaults.useXDomain = true;
   delete $httpProvider.defaults.headers.common['X-Requested-With'];
   $httpProvider.defaults.headers.common['Content-Type'] = 'application/json';

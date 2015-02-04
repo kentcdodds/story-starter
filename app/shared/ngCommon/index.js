@@ -11,8 +11,8 @@ require('angular-sanitize/angular-sanitize') && deps.push('ngSanitize');
 
 // angular-material stuff
 window.Hammer = require('hammerjs');
-require('material-design');
-require('material-design/angular-material.css');
+require('angular-material');
+require('angular-material/angular-material.css');
 deps.push('ngMaterial');
 
 

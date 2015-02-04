@@ -1,11 +1,10 @@
-<div class="welcome" layout="row">
-  <div flex-sm="10" flex-gt-sm="20" flex-gt-md="30"></div>
-  <md-content flex-sm="80" flex-gt-sm="60" flex-gt-md="40">
+<div class="Welcome" layout="row">
+  <div flex-gt-sm="10" flex-gt-md="20" flex-gt-lg="30"></div>
+  <md-content flex-gt-sm="80" flex-gt-md="60" flex-gt-lg="40">
     <md-card>
       <h1>Story Starter</h1>
       <h2>{{vm.$state.current.data.displayName}}</h2>
-      <ss-icon icon="arrow-back"></ss-icon>
-      <div ui-view></div>
+      <div ui-view class="welcome__content"></div>
     </md-card>
   </md-content>
 </div>
