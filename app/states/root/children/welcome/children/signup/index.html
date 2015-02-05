@@ -1,5 +1,5 @@
-<form>
-  <formly-form model="vm.signupModel" fields="vm.signupFields" ng-submit="vm.signup(vm.signupModel)">
+<form ng-submit="vm.signup(vm.signupModel)">
+  <formly-form model="vm.signupModel" fields="vm.signupFields">
     <md-button type="submit" class="md-raised md-primary">Sign Up</md-button>
   </formly-form>
   <a ss-event-navigate="login">Login</a>

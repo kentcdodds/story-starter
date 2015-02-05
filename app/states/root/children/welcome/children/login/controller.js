@@ -1,6 +1,8 @@
 // @ngInject
-module.exports = function LoginCtrl() {
+module.exports = function LoginCtrl(AuthToken, stateUtils) {
   var vm = this;
+
+  vm.login = login;
 
   vm.loginModel = {};
   vm.loginFields = [
@@ -24,4 +26,9 @@ module.exports = function LoginCtrl() {
       }
     }
   ];
+
+  function login(info) {
+    AuthToken.setToken(angular.toJson(info));
+    stateUtils.eventNavigate('authenticated');
+  }
 };

@@ -14,6 +14,6 @@ module.exports = require('registerState')(__filename, require('ngCommon'), {
     }
   },
   data: {
-    activationEvents: ['noRouteMatch']
+    activationEvents: ['noRouteMatch', 'authenticated']
   }
 }).state;
